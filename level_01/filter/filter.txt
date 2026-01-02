@@ -1,6 +1,6 @@
-Assignment Name        filter
-Expected File          filter.c
-Allowed Functions      read, write, strlen, memmem, memmove, malloc, calloc, realloc, free, printf, fprintf, stdout, stderr, perror
+Assignment Name:        filter
+Expected File:          filter.c
+Allowed Functions:      read, write, strlen, memmem, memmove, malloc, calloc, realloc, free, printf, fprintf, stdout, stderr, perror
 
 Objective°‧ 𓆝 𓆟 𓆞 ·｡
 Write a program that takes exactly one argument and reads from stdin.  
@@ -11,7 +11,7 @@ Requirements°‧ 𓆝 𓆟 𓆞 ·｡
 1. The program must take exactly one non-empty argument. If called with zero, empty, or multiple arguments, return(1).
 2. Read from stdin until EOF.
 3. Replace every occurrence of the argument with "*" in the output.
-4. Handle memory and read errors.
+4. Handle memory and read errors. On error, write Error: <error message> to stderr and return(1).
 
 Examples°‧ 𓆝 𓆟 𓆞 ·｡
 $> echo 'abcdefaaaabcdeabcabcdabc' | ./filter abc | cat -e
